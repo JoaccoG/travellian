@@ -57,15 +57,24 @@
   outline: none;
 }
 .book-form__btn {
-  height: 4rem;
+  height: 5rem;
   background-color: #ff7757;
   border: none;
   border-radius: 0 0 1rem 1rem;
-  font-family: "Playfair Display", serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  font-size: 2rem;
+  color: white;
+}
+.book-form__btn p {
+  font-family: "Playfair Display", serif;
+}
+.book-form__btn i {
+  font-size: 1.2rem;
 }
 
 /* -------->> Media-query */
