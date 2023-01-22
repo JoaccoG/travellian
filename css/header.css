@@ -22,10 +22,15 @@
   align-items: center;
   flex: 1 1;
   gap: 3rem;
-  background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  transition: all 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: all 400ms ease;
+}
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .header__navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+  }
 }
 .header__navbar ul {
   display: flex;
@@ -43,6 +48,7 @@
   font-weight: 400;
   font-size: 1.5rem;
   padding: 0.5rem;
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
 }
 .header__navbar ul li a:hover,
 .header__navbar .navbar__links li:first-child a {
@@ -107,7 +113,7 @@
     background-color: rgba(0, 0, 0, 0);
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
-    transition: all 0s ease;
+    transition: all 0ms ease;
   }
   .header__navbar ul {
     width: auto;

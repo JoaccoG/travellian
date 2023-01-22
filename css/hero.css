@@ -36,14 +36,17 @@
   color: #767e86;
   text-transform: uppercase;
   font-size: 0.8rem;
+  width: 80%;
 }
 .hero__book-form form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 .hero__book-form form label {
   margin: 1rem 1rem 1rem 1rem;
+  width: 80%;
 }
 .hero__book-form form label input {
   font-family: "Playfair Display", serif;
@@ -55,12 +58,14 @@
 }
 .hero__book-form form label input:focus {
   outline: none;
+  border-bottom: 1px solid #ff7757;
 }
-.book-form__btn {
+.hero__book-form .book-form__btn {
   height: 5rem;
+  width: 100%;
   background-color: #ff7757;
   border: none;
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 0 0 16px 16px;
   cursor: pointer;
   display: flex;
   flex-wrap: nowrap;
@@ -70,19 +75,54 @@
   font-size: 2rem;
   color: white;
 }
-.book-form__btn p {
+.hero__book-form .book-form__btn:hover {
+  font-weight: 500;
+}
+.hero__book-form .book-form__btn p {
   font-family: "Playfair Display", serif;
 }
-.book-form__btn i {
+.hero__book-form .book-form__btn i {
   font-size: 1.2rem;
 }
 
 /* -------->> Media-query */
 @media screen and (min-width: 1440px) {
   .hero {
-    height: 100vh;
+    height: 110vh;
+    align-items: flex-start;
   }
+
   .hero__background {
-    height: 100vh;
+    height: 110%;
+  }
+
+  .hero__title {
+    margin: 8rem 15% 0 2rem;
+  }
+  .hero__title h1 {
+    font-size: 5.5rem;
+  }
+  .hero__title p {
+    font-size: 1.5rem;
+  }
+
+  .hero__book-form {
+    font-size: 0.8rem;
+    margin: 2rem;
+    width: 80%;
+    border-radius: 0 20px 20px 0;
+  }
+  .hero__book-form form {
+    flex-direction: row;
+    margin: 0;
+  }
+  .hero__book-form .book-form__btn {
+    height: 8rem;
+    width: 50%;
+    background-color: #ff7757;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    padding: 2rem 1rem;
+    font-size: 2rem;
   }
 }
