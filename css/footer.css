@@ -1,5 +1,63 @@
 .footer {
   width: 100%;
-  height: 50vh;
-  background-color: black;
+  background-color: #172432;
+  padding: 3rem 1rem;
+  position: relative;
+  z-index: -10;
+}
+
+.footer div:not(:last-child) ul li {
+  margin: 0.75rem 0 0.75rem 0.75rem;
+}
+
+.footer h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  margin: 2rem 0 1rem 0;
+}
+.footer a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+}
+
+.footer__logo {
+  width: 80%;
+}
+.footer__logo img {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+.footer__logo p {
+  font-size: 0.875rem;
+  color: white;
+}
+
+.footer__social ul {
+  display: flex;
+}
+.footer__social ul li a i {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding: 150px 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer div:not(:only-child) ul li {
+    margin: 0.75rem 0;
+  }
+  .footer h2 {
+    margin: 0;
+  }
+  .footer__logo {
+    width: auto;
+  }
+  .footer__logo img {
+    width: 80%;
+  }
 }
