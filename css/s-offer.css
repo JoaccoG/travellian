@@ -80,18 +80,20 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
+    padding: 2rem 0 2rem 12px;
   }
   .s-offer .sections__title {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
+    margin-bottom: 1.25rem;
   }
   .s-offer .sections__title h2::after {
     float: right;
   }
   .s-offer .sections__btn--desktop {
-    margin-left: 12px;
+    margin-left: 0 0 12px 1.55rem;
   }
 
   .s-offer__container {

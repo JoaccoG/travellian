@@ -1,12 +1,24 @@
-/* -------->> Fonts */
+/* -------->>> Fonts <<<-------- */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 /*
 font-family: 'Playfair Display', serif;
 font-family: 'Rubik', sans-serif;
 font-family: 'Mulish', sans-serif;
 */
 
-/* -------->> Resets */
+/* ------->>> Import all style-sheets into main CSS <<<-------- */
+@import url(./header.css);
+@import url(./hero.css);
+@import url(./destinations.css);
+@import url(./s-offer.css);
+@import url(./our-blog.css);
+@import url(./trip-planners.css);
+@import url(./testimonial.css);
+@import url(./newsletter.css);
+@import url(./footer.css);
+
+/* ------->>> Resets <<<-------- */
 * {
   padding: 0;
   margin: 0;
@@ -21,8 +33,9 @@ font-family: 'Mulish', sans-serif;
   text-decoration: none;
 }
 
-/* -------->> General */
-/* -------->> Botones <<-------- */
+/* -------->>> Components <<<-------- */
+
+/* ----->> Buttons <<----- */
 .sections__btn--mobile,
 .sections__btn--desktop {
   width: 100%;
@@ -62,7 +75,7 @@ font-family: 'Mulish', sans-serif;
   }
 }
 
-/* -------->> Titulos <<-------- */
+/* -------->> Sections titles <<-------- */
 .sections__title {
   margin: 2rem 1rem;
 }
