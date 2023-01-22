@@ -1,61 +1,11 @@
 .destinations {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
   width: 100%;
-  padding-top: 15%;
-}
-
-.destinations__box {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0;
-  gap: 32px;
-  width: 100%;
-  height: 100%;
-}
-
-.destinations__title {
-  font-family: "Playfair Display";
-  width: 60%;
-  font-size: 2rem;
-  margin-right: auto;
-  font-weight: 100;
-  margin-left: -21%;
-}
-
-.destinations__title--line {
-  background-color: #ff7757;
-  color: #ff7757;
-  font-size: 2rem;
-  border-color: #ff7757;
-  width: 48%;
-  margin-top: -5%;
-  margin-left: -21%;
-}
-
-.destinations__title--descriptions {
-  font-family: "Rubik";
-  width: 68%;
-  color: #767e86;
-  margin-left: -21%;
-}
-
-.arrows-up {
-  display: none;
 }
 
 .destinations__picture {
   display: flex;
   justify-content: center;
   width: 100%;
-  z-index: -1;
 }
 
 .destinations__picture--two,
@@ -150,15 +100,6 @@
   color: white;
 }
 
-.arrows {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 172px;
-  height: 60px;
-}
-
 @media screen and (min-width: 1440px) {
   .destinations {
     display: flex;
@@ -167,33 +108,6 @@
     align-items: center;
     gap: 100px;
     width: 100%;
-    padding-top: 8%;
-  }
-
-  .destinations__title {
-    font-family: "Playfair Display";
-    width: 60%;
-    font-size: 2rem;
-    margin-right: auto;
-    font-weight: 100;
-    margin-left: 0%;
-  }
-  .destinations__title--line {
-    background-color: #ff7757;
-    color: #ff7757;
-    font-size: 2rem;
-    border-color: #ff7757;
-    width: 13%;
-    margin-top: -1%;
-    margin-left: 0%;
-  }
-
-  .destinations__title--descriptions {
-    font-family: "Rubik";
-    width: 68%;
-    color: #767e86;
-    margin-left: 0%;
-    margin-top: -10%;
   }
 
   .destinations__pictures--one--berlin,
@@ -275,30 +189,32 @@
     color: white;
   }
 
-  .arrows {
-    display: none;
-  }
-
-  .arrows-up {
+  /* -------->> Titles bugfix <<-------- */
+  .destinations .destinations__title {
+    width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem 0 2rem 12px;
+  }
+  .destinations__title .sections__title {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    height: 117px;
-    width: 4%;
-    margin-left: 95%;
-    padding-bottom: 5%;
+    width: 100%;
+    margin-bottom: 1.25rem;
   }
-
-  .arrows__left--up {
+  .destinations__title .sections__btn--desktop {
     display: flex;
-    height: 52%;
-    width: 43%;
+    justify-content: flex-end;
   }
-
-  .arrows__right--up {
-    display: flex;
-    height: 52%;
-    width: 43%;
-  }
+}
+.destinations__title .sections__title h2::after {
+  width: 75%;
+}
+.destinations img {
+  z-index: -20;
+}
+.destinations p {
+  z-index: -20;
 }

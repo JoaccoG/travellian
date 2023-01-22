@@ -96,7 +96,7 @@ font-family: 'Mulish', sans-serif;
   text-transform: capitalize;
   color: #172432;
   display: inline-block;
-  margin: 2rem 0;
+  margin: 2.5rem 0;
 }
 .sections__title h2::after {
   display: block;
