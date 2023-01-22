@@ -126,3 +126,13 @@ font-family: 'Mulish', sans-serif;
     font-size: 1.5rem;
   }
 }
+
+/* -------->> Disable on mobile <<-------- */
+.mobile--disabled {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .mobile--disabled {
+    display: block;
+  }
+}

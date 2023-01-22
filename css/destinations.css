@@ -1,195 +1,57 @@
-.destinations {
-  width: 100%;
+.destinations__title .sections__title h2::after {
+  width: 75%;
 }
 
-.destinations__picture {
-  display: flex;
-  justify-content: center;
+.destinations__container {
   width: 100%;
-}
-
-.destinations__picture--two,
-.destinations__picture--three {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  gap: 32px;
-  width: 100%;
-  height: 390px;
-  padding: 0;
-  display: none;
+  gap: 2rem;
+  overflow: hidden;
+  padding: 1rem;
 }
-
-.destinations__picture--one {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  width: 90%;
-  height: 80%;
-  border-radius: 8%;
+.destinations-container__content {
   position: relative;
+  /*   z-index: -1;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0) 60%
+  ); */
+  border-radius: 2rem;
 }
-
-.destinations__pictures--one--berlin,
-.destinations__pictures--two--london,
-.destinations__pictures--three--venice {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  width: 104%;
-  height: 328px;
-  border-radius: 8%;
+.destinations-container__content img {
   position: relative;
+  z-index: -1;
+  width: 343px;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
 }
-
-.destinations__pictures--one--name {
+.content__text {
   position: absolute;
-  margin-bottom: 23%;
-  margin-right: 38%;
-  font-size: 1.3rem;
-  font-family: "Playfair Display";
+  z-index: -1;
+  bottom: 2rem;
+  left: 2rem;
   color: white;
 }
-
-.destinations__pictures--one--place {
-  position: absolute;
-  font-size: 1rem;
-  margin-bottom: 12%;
-  margin-right: 53%;
-  font-family: "Rubik";
-  color: white;
+.content__text p {
+  font-size: 1.2rem;
 }
-
-.destinations__pictures--two--name {
-  position: absolute;
-  margin-top: 60%;
-  margin-right: 20%;
+.content__text p i {
   font-size: 1.5rem;
-  font-family: "Playfair Display";
-  color: white;
-  justify-content: left;
+  margin-right: 1rem;
+}
+.content__text p:first-child {
+  font-family: "Playfair Display", serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 
-.destinations__pictures--two--place {
-  position: absolute;
-  font-size: 1rem;
-  margin-top: 70%;
-  margin-right: 20%;
-  font-family: "Rubik";
-  color: white;
-}
-
-.destinations__pictures--three--name {
-  position: absolute;
-  margin-top: 60%;
-  margin-right: 35%;
-  font-size: 1.5rem;
-  font-family: "Playfair Display";
-  color: #ffffff;
-  justify-content: left;
-}
-
-.destinations__pictures--three--place {
-  position: absolute;
-  font-size: 1rem;
-  margin-top: 70%;
-  margin-right: 45%;
-  font-family: "Rubik";
-  color: white;
-}
-
-@media screen and (min-width: 1440px) {
-  .destinations {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    width: 100%;
-  }
-
-  .destinations__pictures--one--berlin,
-  .destinations__pictures--two--london,
-  .destinations__pictures--three--venice {
-    display: flex;
-    width: 96%;
-    height: 515px;
-    border-radius: 3%;
-    position: relative;
-    align-items: center;
-    margin-left: 2%;
-  }
-
-  .destinations__picture--one,
-  .destinations__picture--two,
-  .destinations__picture--three {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    width: 90%;
-    height: 89%;
-    border-radius: 8%;
-    position: relative;
-  }
-
-  .destinations__pictures--one--name {
-    position: absolute;
-    margin-bottom: 12%;
-    padding-left: 6%;
-    font-size: 1rem;
-    font-family: "Playfair Display";
-    color: white;
-  }
-
-  .destinations__pictures--two--name {
-    position: absolute;
-    padding-bottom: 12%;
-    padding-left: 6%;
-    font-size: 1rem;
-    font-family: "Playfair Display";
-    color: white;
-  }
-
-  .destinations__pictures--three--name {
-    position: absolute;
-    margin-bottom: 12%;
-    padding-left: 6%;
-    font-size: 1rem;
-    font-family: "Playfair Display";
-    color: white;
-  }
-
-  .destinations__pictures--one--place {
-    position: absolute;
-    font-size: 0.7rem;
-    margin-bottom: 8%;
-    margin-left: 6%;
-    font-family: "Rubik";
-    color: white;
-  }
-
-  .destinations__pictures--two--place {
-    position: absolute;
-    font-size: 0.7rem;
-    padding-bottom: 8%;
-    padding-left: 6%;
-    font-family: "Rubik";
-    color: white;
-  }
-
-  .destinations__pictures--three--place {
-    position: absolute;
-    font-size: 0.7rem;
-    padding-bottom: 8%;
-    padding-left: 6%;
-    font-family: "Rubik";
-    color: white;
-  }
-
-  /* -------->> Titles bugfix <<-------- */
+@media screen and (min-width: 1280px) {
   .destinations .destinations__title {
     width: 100%;
     display: flex;
@@ -208,13 +70,15 @@
     display: flex;
     justify-content: flex-end;
   }
-}
-.destinations__title .sections__title h2::after {
-  width: 75%;
-}
-.destinations img {
-  z-index: -20;
-}
-.destinations p {
-  z-index: -20;
+
+  .destinations-container__content img {
+    width: 497px;
+    height: 661px;
+  }
+  .content__text p {
+    font: 1.8rem;
+  }
+  .content__text p:first-child {
+    font-size: 2.3rem;
+  }
 }
