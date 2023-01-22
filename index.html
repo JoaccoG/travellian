@@ -48,6 +48,34 @@
   <main>
     <section class="hero">
       <img class="hero__background" src="./assets/hero-image.jpeg" alt="town with lake and mountain">
+      <div class="hero__title">
+        <h1>Start your unforgettable journey with us.</h1>
+        <p>The best travel for your journey begins now!</p>
+      </div>
+      <div class="hero__book-form">
+        <form action="#">
+          <label for="destination">
+            Destination
+            <input type="text" id="destination" placeholder="Dubai" required>
+          </label>
+          <label for="persons">
+            Persons
+            <input type="number" id="persons" placeholder="2" min="1" required>
+          </label>
+          <label for="check-in">
+            Check in
+            <input type="date" id="check-in" required>
+          </label>
+          <label for="check-out">
+            Check out
+            <input type="date" id="check-out" required>
+          </label>
+          <button class="book-form__btn">
+            <p>Book now</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
     </section>
     <section class="destinations">
     </section>
