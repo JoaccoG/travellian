@@ -8,6 +8,7 @@
   align-items: center;
   gap: 100px;
   width: 100%;
+  padding-top: 15%;
 }
 
 .destinations__box {
@@ -29,6 +30,7 @@
   font-size: 2rem;
   margin-right: auto;
   font-weight: 100;
+  margin-left: -21%;
 }
 
 .destinations__title--line {
@@ -36,14 +38,16 @@
   color: #ff7757;
   font-size: 2rem;
   border-color: #ff7757;
-  width: 50%;
-  margin-top: -3%;
+  width: 48%;
+  margin-top: -5%;
+  margin-left: -21%;
 }
 
 .destinations__title--descriptions {
-  font-family: "Playfair Display";
+  font-family: "Rubik";
   width: 68%;
   color: #767e86;
+  margin-left: -21%;
 }
 
 .arrows-up {
@@ -86,16 +90,16 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  width: 90%;
-  height: 330px;
+  width: 104%;
+  height: 328px;
   border-radius: 8%;
   position: relative;
 }
 
 .destinations__pictures--one--name {
   position: absolute;
-  margin-bottom: 13%;
-  margin-right: 24%;
+  margin-bottom: 23%;
+  margin-right: 38%;
   font-size: 1.3rem;
   font-family: "Playfair Display";
   color: white;
@@ -104,8 +108,8 @@
 .destinations__pictures--one--place {
   position: absolute;
   font-size: 1rem;
-  margin-bottom: 5%;
-  margin-right: 40%;
+  margin-bottom: 12%;
+  margin-right: 53%;
   font-family: "Rubik";
   color: white;
 }
@@ -158,19 +162,40 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .destinations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    padding-top: 8%;
+  }
+
+  .destinations__title {
+    font-family: "Playfair Display";
+    width: 60%;
+    font-size: 2rem;
+    margin-right: auto;
+    font-weight: 100;
+    margin-left: 0%;
+  }
   .destinations__title--line {
     background-color: #ff7757;
     color: #ff7757;
     font-size: 2rem;
     border-color: #ff7757;
-    width: 12%;
-    margin-top: -2%;
+    width: 13%;
+    margin-top: -1%;
+    margin-left: 0%;
   }
 
   .destinations__title--descriptions {
-    font-family: "Playfair Display";
-    width: 92%;
+    font-family: "Rubik";
+    width: 68%;
     color: #767e86;
+    margin-left: 0%;
+    margin-top: -10%;
   }
 
   .destinations__pictures--one--berlin,
@@ -178,7 +203,7 @@
   .destinations__pictures--three--venice {
     display: flex;
     width: 96%;
-    height: 661px;
+    height: 515px;
     border-radius: 3%;
     position: relative;
     align-items: center;
@@ -196,5 +221,86 @@
     height: 89%;
     border-radius: 8%;
     position: relative;
+  }
+
+  .destinations__pictures--one--name {
+    position: absolute;
+    margin-bottom: 12%;
+    padding-left: 6%;
+    font-size: 1rem;
+    font-family: "Playfair Display";
+    color: white;
+  }
+
+  .destinations__pictures--two--name {
+    position: absolute;
+    padding-bottom: 12%;
+    padding-left: 6%;
+    font-size: 1rem;
+    font-family: "Playfair Display";
+    color: white;
+  }
+
+  .destinations__pictures--three--name {
+    position: absolute;
+    margin-bottom: 12%;
+    padding-left: 6%;
+    font-size: 1rem;
+    font-family: "Playfair Display";
+    color: white;
+  }
+
+  .destinations__pictures--one--place {
+    position: absolute;
+    font-size: 0.7rem;
+    margin-bottom: 8%;
+    margin-left: 6%;
+    font-family: "Rubik";
+    color: white;
+  }
+
+  .destinations__pictures--two--place {
+    position: absolute;
+    font-size: 0.7rem;
+    padding-bottom: 8%;
+    padding-left: 6%;
+    font-family: "Rubik";
+    color: white;
+  }
+
+  .destinations__pictures--three--place {
+    position: absolute;
+    font-size: 0.7rem;
+    padding-bottom: 8%;
+    padding-left: 6%;
+    font-family: "Rubik";
+    color: white;
+  }
+
+  .arrows {
+    display: none;
+  }
+
+  .arrows-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 117px;
+    width: 4%;
+    margin-left: 95%;
+    padding-bottom: 5%;
+  }
+
+  .arrows__left--up {
+    display: flex;
+    height: 52%;
+    width: 43%;
+  }
+
+  .arrows__right--up {
+    display: flex;
+    height: 52%;
+    width: 43%;
   }
 }
