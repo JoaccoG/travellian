@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .header__logo {
   z-index: 100;
@@ -22,7 +23,7 @@
   align-items: center;
   flex: 1 1;
   gap: 3rem;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
   transition: all 400ms ease;
 }
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
@@ -94,6 +95,7 @@
 /* -------->> Media-query */
 @media screen and (min-width: 1440px) {
   .header {
+    height: 12vh;
     padding: 2rem;
     justify-content: space-between;
     flex-wrap: wrap;

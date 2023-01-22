@@ -1,8 +1,9 @@
 /* -------->> Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 /*
 font-family: 'Playfair Display', serif;
 font-family: 'Rubik', sans-serif;
+font-family: 'Mulish', sans-serif;
 */
 
 /* -------->> Resets */
@@ -20,4 +21,85 @@ font-family: 'Rubik', sans-serif;
   text-decoration: none;
 }
 
-/* -------->> Generals */
+/* -------->> General */
+/* -------->> Botones <<-------- */
+.sections__btn--mobile,
+.sections__btn--desktop {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sections__btn--mobile button,
+.sections__btn--desktop button {
+  border: none;
+  border-radius: 12px;
+  padding: 20px 28px;
+  margin: 20px;
+}
+.sections__btn--mobile .btn__left,
+.sections__btn--desktop .btn__left {
+  background-color: #172432;
+}
+.sections__btn--mobile .btn__right,
+.sections__btn--desktop .btn__right {
+  background-color: #ff7757;
+}
+.sections__btn--mobile button i,
+.sections__btn--desktop button i {
+  color: white;
+  font-size: 1.4rem;
+}
+.sections__btn--desktop {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .sections__btn--mobile {
+    display: none;
+  }
+  .sections__btn--desktop {
+    display: block;
+  }
+}
+
+/* -------->> Titulos <<-------- */
+.sections__title {
+  margin: 2rem 1rem;
+}
+.sections__title h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #172432;
+  display: inline-block;
+  margin: 2rem 0;
+}
+.sections__title h2::after {
+  display: block;
+  position: relative;
+  content: "";
+  background-color: #ff7757;
+  width: 100%;
+  height: 3px;
+  margin-top: 1rem;
+  z-index: -1;
+}
+.sections__title p {
+  font-size: 1.2rem;
+  color: #767e86;
+}
+@media screen and (min-width: 1440px) {
+  .sections__title {
+    margin: 2.8rem 2rem;
+  }
+  .sections__title h2 {
+    font-size: 4rem;
+  }
+  .sections__title h2::after {
+    width: 65%;
+  }
+  .sections__title p {
+    font-size: 1.5rem;
+  }
+}
