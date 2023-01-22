@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap");
+
+.tripl-planners {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.tripl-planners__header {
+  display: flex;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding-top: 24%;
+  width: 100%;
+  padding-left: 1%;
+}
+
+.tripl-planners__header--tittle {
+  font-family: "Playfair Display";
+  font-size: 2rem;
+  font-weight: lighter;
+  width: 111%;
+  padding-left: 4%;
+}
+
+.tripl-planners__header--line {
+  background-color: #ff7757;
+  color: #ff7757;
+  font-size: 2rem;
+  border-color: #ff7757;
+  width: 49%;
+  margin-top: 12px;
+  margin-left: 4%;
+}
+
+.tripl-planners__arrows-up {
+  display: none;
+}
+
+.tripl-planners__header--descriptions {
+  font-family: "Rubik";
+  font-size: 1rem;
+  font-weight: lighter;
+  width: 66%;
+  color: #767e86;
+  margin-left: 3%;
+  padding-top: 5%;
+}
+
+.tripl-planners__header--button {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 38%;
+  margin-left: 2%;
+  margin-top: 5%;
+  background-color: #ff7757;
+  color: white;
+  font-size: 0.9rem;
+  justify-content: center;
+  font-family: "Rubik";
+  font-weight: lighter;
+  border-radius: 7px;
+  border: none;
+}
+
+.tripl-planners__pictures {
+  display: flex;
+  padding-top: 8%;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tripl-planners__pictures--rome,
+.tripl-planners__pictures--paris,
+.tripl-planners__pictures--barcelona,
+.tripl-planners__pictures--budapest {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding-top: 13%;
+}
+
+.tripl-planners__pictures--rome-picture,
+.tripl-planners__pictures--barcelona-picture,
+.tripl-planners__pictures--budapest-picture,
+.tripl-planners__pictures--paris-picture {
+  width: 92%;
+  height: 370px;
+  border-radius: 9%;
+}
+
+.tripl-planners__pictures--foot {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-family: "Rubik";
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+
+.tripl-planners__pictures--foot-rome,
+.tripl-planners__pictures--foot-barcelona,
+.tripl-planners__pictures--foot-budapest,
+.tripl-planners__pictures--foot-paris {
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+.tripl-planners__pictures--price-rome,
+.tripl-planners__pictures--price-barcelona,
+.tripl-planners__pictures--price-budapest,
+.tripl-planners__pictures--price-paris {
+  padding-top: 5%;
+  padding-right: 5%;
+}
+
+.tripl-planners__pictures--name-rome,
+.tripl-planners__pictures--name-barcelona,
+.tripl-planners__pictures--name-budapest,
+.tripl-planners__pictures--name-paris {
+  font-family: "Playfair Display";
+  font-size: 1.5rem;
+  padding-top: 2%;
+  width: 108%;
+  margin-left: 16%;
+}
+
+.tripl-planners__pictures--stars {
+  display: flex;
+  color: #ffc107;
+  align-items: center;
+  width: 27%;
+  height: 6%;
+  justify-content: space-evenly;
+  font-size: 0.8rem;
+  margin-right: 68%;
+}
+
+.tripl-planners__pictures--days-tour-rome,
+.tripl-planners__pictures--days-tour-barcelona,
+.tripl-planners__pictures--days-tour-budapest,
+.tripl-planners__pictures--days-tour-paris {
+  font-family: "Rubik";
+  font-weight: lighter;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 58%;
+  height: 7%;
+  margin-right: -31%;
+  margin-top: -7%;
+  flex-direction: row;
+}
+
+.tripl-planners__button {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .tripl-planners {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .tripl-planners__header {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 12%;
+    width: 100%;
+    padding-left: -8%;
+    padding-right: 79%;
+    flex-wrap: nowrap;
+  }
+
+  .tripl-planners__header--tittle {
+    font-family: "Playfair Display";
+    font-size: 2rem;
+    font-weight: lighter;
+    width: 111%;
+    padding-left: 4%;
+  }
+
+  .tripl-planners__header--line {
+    background-color: #ff7757;
+    color: #ff7757;
+    font-size: 2rem;
+    border-color: #ff7757;
+    width: 49%;
+    margin-top: 12px;
+    margin-left: 4%;
+  }
+
+  .tripl-planners__header--descriptions {
+    font-family: "Rubik";
+    font-size: 0.8rem;
+    font-weight: lighter;
+    width: 209%;
+    color: #767e86;
+    margin-left: 3%;
+    padding-top: 1%;
+  }
+
+  .tripl-planners__arrows-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 11px;
+    width: 50%;
+    margin-left: 444%;
+    padding-bottom: 5%;
+  }
+
+  .tripl-planners__arrows-left-up {
+    display: flex;
+    width: 20%;
+    margin-left: 36%;
+  }
+
+  .tripl-planners__arrows-right-up {
+    display: flex;
+    width: 20%;
+  }
+
+  .tripl-planners__header--button {
+    display: none;
+  }
+
+  .tripl-planners__pictures {
+    display: flex;
+    padding-top: 0%;
+    margin-top: -9%;
+    width: 100%;
+    height: 57%;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+  }
+
+  .tripl-planners__pictures--rome,
+  .tripl-planners__pictures--paris,
+  .tripl-planners__pictures--barcelona,
+  .tripl-planners__pictures--budapest {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding-top: 13%;
+  }
+
+  .tripl-planners__pictures--rome-picture,
+  .tripl-planners__pictures--barcelona-picture,
+  .tripl-planners__pictures--budapest-picture,
+  .tripl-planners__pictures--paris-picture {
+    width: 90%;
+    height: 394px;
+    border-radius: 5%;
+  }
+
+  .tripl-planners__pictures--foot {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-family: "Rubik";
+    font-weight: lighter;
+    font-size: 0.7rem;
+  }
+
+  .tripl-planners__pictures--foot-rome,
+  .tripl-planners__pictures--foot-barcelona,
+  .tripl-planners__pictures--foot-budapest {
+    display: none;
+  }
+
+  .tripl-planners__pictures--foot-paris {
+    padding-top: 4%;
+    margin-left: 0%;
+  }
+
+  .tripl-planners__pictures--price-rome,
+  .tripl-planners__pictures--price-barcelona,
+  .tripl-planners__pictures--price-budapest {
+    display: none;
+  }
+
+  .tripl-planners__pictures--price-paris {
+    padding-top: 3%;
+    margin-right: 1%;
+  }
+
+  .tripl-planners__pictures--name-rome,
+  .tripl-planners__pictures--name-barcelona,
+  .tripl-planners__pictures--name-budapest {
+    display: none;
+  }
+
+  .tripl-planners__pictures--name-paris {
+    font-family: "Playfair Display";
+    font-size: 1rem;
+    padding-top: 2%;
+    margin-left: 17%;
+  }
+
+  .tripl-planners__pictures--stars {
+    display: none;
+  }
+
+  .tripl-planners__pictures--stars-paris {
+    display: flex;
+    color: #ffc107;
+    align-items: center;
+    width: 24%;
+    height: 10%;
+    justify-content: space-evenly;
+    font-size: 0.6rem;
+    margin-right: 69%;
+    padding-top: 2%;
+  }
+
+  .tripl-planners__pictures--days-tour-rome,
+  .tripl-planners__pictures--days-tour-barcelona,
+  .tripl-planners__pictures--days-tour-budapest {
+    display: none;
+  }
+
+  .tripl-planners__pictures--days-tour-paris {
+    font-family: "Rubik";
+    font-weight: lighter;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 58%;
+    height: 5%;
+    margin-right: -32%;
+    margin-top: -4%;
+    flex-direction: row;
+  }
+
+  .tripl-planners__button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tripl-planners__button-down {
+    display: flex;
+    align-items: center;
+    height: 26px;
+    width: 6%;
+    /* margin-left: 25%; */
+    margin-top: 5%;
+    background-color: #ff7757;
+    color: white;
+    font-size: 0.5rem;
+    font-family: "Rubik";
+    font-weight: lighter;
+    border-radius: 5px;
+    border: none;
+    justify-content: center;
+  }
+}
