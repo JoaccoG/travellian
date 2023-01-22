@@ -49,14 +49,24 @@ font-family: 'Mulish', sans-serif;
   border-radius: 12px;
   padding: 20px 28px;
   margin: 20px;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
 }
 .sections__btn--mobile .btn__left,
 .sections__btn--desktop .btn__left {
   background-color: #172432;
 }
+.sections__btn--mobile .btn__left:hover,
+.sections__btn--desktop .btn__left:hover {
+  background-color: rgba(23, 36, 50, 0.8);
+}
 .sections__btn--mobile .btn__right,
 .sections__btn--desktop .btn__right {
   background-color: #ff7757;
+}
+.sections__btn--mobile .btn__right:hover,
+.sections__btn--desktop .btn__right:hover {
+  background-color: rgba(255, 118, 87, 0.8);
 }
 .sections__btn--mobile button i,
 .sections__btn--desktop button i {
