@@ -2,6 +2,8 @@
   width: 100%;
   background-color: #172432;
   padding: 3rem 1rem;
+  position: relative;
+  z-index: -10;
 }
 
 .footer div:not(:last-child) ul li {
@@ -38,4 +40,24 @@
 .footer__social ul li a i {
   font-size: 2rem;
   margin-right: 1.5rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding: 150px 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer div:not(:only-child) ul li {
+    margin: 0.75rem 0;
+  }
+  .footer h2 {
+    margin: 0;
+  }
+  .footer__logo {
+    width: auto;
+  }
+  .footer__logo img {
+    width: 80%;
+  }
 }
