@@ -4,49 +4,6 @@
   width: 100%;
 }
 
-.tripl-planners__header {
-  display: flex;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  padding-top: 24%;
-  width: 100%;
-  padding-left: 1%;
-}
-
-.tripl-planners__header--tittle {
-  font-family: "Playfair Display";
-  font-size: 2rem;
-  font-weight: lighter;
-  width: 111%;
-  padding-left: 4%;
-}
-
-.tripl-planners__header--line {
-  background-color: #ff7757;
-  color: #ff7757;
-  font-size: 2rem;
-  border-color: #ff7757;
-  width: 49%;
-  margin-top: 12px;
-  margin-left: 4%;
-}
-
-.tripl-planners__arrows-up {
-  display: none;
-}
-
-.tripl-planners__header--descriptions {
-  font-family: "Rubik";
-  font-size: 1rem;
-  font-weight: lighter;
-  width: 66%;
-  color: #767e86;
-  margin-left: 3%;
-  padding-top: 5%;
-}
-
 .tripl-planners__header--button {
   display: flex;
   align-items: center;
@@ -165,67 +122,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-  }
-
-  .tripl-planners__header {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    padding-top: 12%;
-    width: 100%;
-    padding-left: -8%;
-    padding-right: 79%;
-    flex-wrap: nowrap;
-  }
-
-  .tripl-planners__header--tittle {
-    font-family: "Playfair Display";
-    font-size: 2rem;
-    font-weight: lighter;
-    width: 111%;
-    padding-left: 4%;
-  }
-
-  .tripl-planners__header--line {
-    background-color: #ff7757;
-    color: #ff7757;
-    font-size: 2rem;
-    border-color: #ff7757;
-    width: 49%;
-    margin-top: 12px;
-    margin-left: 4%;
-  }
-
-  .tripl-planners__header--descriptions {
-    font-family: "Rubik";
-    font-size: 0.8rem;
-    font-weight: lighter;
-    width: 209%;
-    color: #767e86;
-    margin-left: 3%;
-    padding-top: 1%;
-  }
-
-  .tripl-planners__arrows-up {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    height: 11px;
-    width: 50%;
-    margin-left: 444%;
-    padding-bottom: 5%;
-  }
-
-  .tripl-planners__arrows-left-up {
-    display: flex;
-    width: 20%;
-    margin-left: 36%;
-  }
-
-  .tripl-planners__arrows-right-up {
-    display: flex;
-    width: 20%;
   }
 
   .tripl-planners__header--button {
@@ -365,5 +261,24 @@
     border-radius: 5px;
     border: none;
     justify-content: center;
+  }
+
+  .tripl-planners .tripl-planners__title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem 0 2rem 12px;
+  }
+  .tripl-planners__title .sections__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 1.25rem;
+  }
+  .tripl-planners__title .sections__btn--desktop {
+    display: flex;
+    justify-content: flex-end;
   }
 }
