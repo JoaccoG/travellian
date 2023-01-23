@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap");
+
+.testimonial {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.testimonial__users--picture-smith,
+.testimonial__users--picture-bellis {
+  display: none;
+}
+
+.testimonial__header--descriptions {
+  width: 70%;
+  font-style: normal;
+}
+
+.testimonial__users {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.testimonial__users--picture-doe {
+  display: flex;
+  width: 89%;
+  height: 369%;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: #f5f6f7;
+  padding-top: 18%;
+  margin-top: 11%;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  border-radius: 4%;
+}
+
+.testimonial__users--picture-doe-image {
+  width: 25%;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -146%;
+  margin-right: 64%;
+}
+
+.testimonial__users--text-doe {
+  font-family: "Rubik";
+  color: #767e86;
+  font-weight: lighter;
+  font-style: normal;
+  width: 69%;
+  position: absolute;
+  margin-top: -47%;
+}
+
+.testimonial__pictures--stars {
+  position: absolute;
+  display: flex;
+  color: #ffc107;
+  align-items: center;
+  width: 30%;
+  justify-content: space-evenly;
+  font-size: 0.8rem;
+  margin-top: 32%;
+  padding-left: -16%;
+  margin-right: 41%;
+}
+
+.testimonial__users--name-doe {
+  position: absolute;
+  font-family: "Playfair Display";
+  color: #767e86;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 1.2rem;
+  margin-bottom: -53%;
+  margin-left: -43%;
+}
+
+.testimonial__users--account-doe {
+  position: absolute;
+  font-family: "Rubik";
+  color: #767e86;
+  font-weight: lighter;
+  font-style: normal;
+  margin-bottom: -68%;
+  margin-left: -42%;
+}
+
+.sections__btn--mobile {
+  padding-top: 111%;
+}
+
+@media screen and (min-width: 1440px) {
+  .sections__title {
+    margin: 2.8rem 2rem;
+  }
+  .sections__title h2 {
+    font-size: 4rem;
+  }
+  .sections__title h2::after {
+    width: 53%;
+  }
+
+  .testimonial {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .testimonial__users--picture-smith,
+  .testimonial__users--picture-bellis {
+    display: flex;
+  }
+
+  .testimonial__header--descriptions {
+    width: 85%;
+    font-style: normal;
+  }
+
+  .testimonial__users {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: -8%;
+  }
+
+  .testimonial__users--picture-doe {
+    display: flex;
+    width: 30%;
+    height: 31%;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #f5f6f7;
+    padding-top: 18%;
+    margin-top: 11%;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    border-radius: 3%;
+  }
+
+  .testimonial__users--picture-smith {
+    display: flex;
+    width: 30%;
+    height: 31%;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #f5f6f7;
+    padding-top: 18%;
+    margin-top: 11%;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    border-radius: 3%;
+  }
+
+  .testimonial__users--picture-bellis {
+    display: flex;
+    width: 30%;
+    height: 31%;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #f5f6f7;
+    padding-top: 18%;
+    margin-top: 11%;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    border-radius: 3%;
+  }
+
+  .testimonial__users--picture-doe-image {
+    width: 15%;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: -124%;
+    margin-right: 72%;
+  }
+
+  .testimonial__users--picture-smith-image {
+    width: 15%;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: -124%;
+    margin-right: 72%;
+  }
+
+  .testimonial__users--picture-bellis-image {
+    width: 15%;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: -124%;
+    margin-right: 72%;
+  }
+
+  .testimonial__users--text-doe {
+    font-family: "Rubik";
+    color: #767e86;
+    font-weight: lighter;
+    font-style: normal;
+    width: 85%;
+    position: absolute;
+    margin-top: -75%;
+  }
+
+  .testimonial__users--text-smith {
+    font-family: "Rubik";
+    color: #767e86;
+    font-weight: lighter;
+    font-style: normal;
+    width: 85%;
+    position: absolute;
+    margin-top: -75%;
+  }
+
+  .testimonial__users--text-bellis {
+    font-family: "Rubik";
+    color: #767e86;
+    font-weight: lighter;
+    font-style: normal;
+    width: 85%;
+    position: absolute;
+    margin-top: -75%;
+  }
+
+  .testimonial__pictures--stars {
+    position: absolute;
+    display: flex;
+    color: #ffc107;
+    align-items: center;
+    width: 30%;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+    margin-top: -39%;
+    margin-right: 60%;
+  }
+
+  .testimonial__users--name-doe {
+    font-family: "Playfair Display";
+    color: #767e86;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin-bottom: 23%;
+    margin-left: -68%;
+  }
+
+  .testimonial__users--name-smith {
+    font-family: "Playfair Display";
+    color: #767e86;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin-bottom: 23%;
+    margin-left: -49%;
+    margin-top: -15%;
+  }
+
+  .testimonial__users--name-bellis {
+    font-family: "Playfair Display";
+    color: #767e86;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin-bottom: 26%;
+    margin-left: -46%;
+    margin-top: -15%;
+  }
+
+  .testimonial__users--account-doe {
+    font-family: "Rubik";
+    color: #767e86;
+    font-weight: lighter;
+    font-style: normal;
+    margin-bottom: 13%;
+    padding-left: -5%;
+    margin-left: -68%;
+  }
+
+  .testimonial__users--account-smith {
+    font-family: "Rubik";
+    color: #767e86;
+    font-weight: lighter;
+    font-style: normal;
+    margin-bottom: 9%;
+    padding-left: -5%;
+    margin-left: -23%;
+    margin-top: -18%;
+  }
+
+  .testimonial__users--account-bellis {
+    font-family: "Rubik";
+    color: #767e86;
+    font-weight: lighter;
+    font-style: normal;
+    margin-bottom: 9%;
+    margin-left: -27%;
+    margin-top: -21%;
+  }
+
+  .sections__btn--desktop {
+    display: flex;
+    border: none;
+    border-radius: 12px;
+    padding: 20px 28px;
+    margin: 20px;
+  }
+}
