@@ -74,6 +74,7 @@ font-family: 'Mulish', sans-serif;
   color: #172432;
   display: inline-block;
   margin: 2rem 0;
+  font-style: normal;
 }
 .sections__title h2::after {
   display: block;
@@ -88,6 +89,7 @@ font-family: 'Mulish', sans-serif;
 .sections__title p {
   font-size: 1.2rem;
   color: #767e86;
+  font-style: normal;
 }
 @media screen and (min-width: 1440px) {
   .sections__title {
