@@ -1,12 +1,24 @@
-/* -------->> Fonts */
+/* -------->>> Fonts <<<-------- */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 /*
 font-family: 'Playfair Display', serif;
 font-family: 'Rubik', sans-serif;
 font-family: 'Mulish', sans-serif;
 */
 
-/* -------->> Resets */
+/* ------->>> Import all style-sheets into main CSS <<<-------- */
+@import url(./header.css);
+@import url(./hero.css);
+@import url(./destinations.css);
+@import url(./s-offer.css);
+@import url(./our-blog.css);
+@import url(./trip-planners.css);
+@import url(./testimonial.css);
+@import url(./newsletter.css);
+@import url(./footer.css);
+
+/* ------->>> Resets <<<-------- */
 * {
   padding: 0;
   margin: 0;
@@ -21,8 +33,9 @@ font-family: 'Mulish', sans-serif;
   text-decoration: none;
 }
 
-/* -------->> General */
-/* -------->> Botones <<-------- */
+/* -------->>> Components <<<-------- */
+
+/* ----->> Buttons <<----- */
 .sections__btn--mobile,
 .sections__btn--desktop {
   width: 100%;
@@ -36,14 +49,24 @@ font-family: 'Mulish', sans-serif;
   border-radius: 12px;
   padding: 20px 28px;
   margin: 20px;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
 }
 .sections__btn--mobile .btn__left,
 .sections__btn--desktop .btn__left {
   background-color: #172432;
 }
+.sections__btn--mobile .btn__left:hover,
+.sections__btn--desktop .btn__left:hover {
+  background-color: rgba(23, 36, 50, 0.8);
+}
 .sections__btn--mobile .btn__right,
 .sections__btn--desktop .btn__right {
   background-color: #ff7757;
+}
+.sections__btn--mobile .btn__right:hover,
+.sections__btn--desktop .btn__right:hover {
+  background-color: rgba(255, 118, 87, 0.8);
 }
 .sections__btn--mobile button i,
 .sections__btn--desktop button i {
@@ -62,7 +85,7 @@ font-family: 'Mulish', sans-serif;
   }
 }
 
-/* -------->> Titulos <<-------- */
+/* -------->> Sections titles <<-------- */
 .sections__title {
   margin: 2rem 1rem;
 }
@@ -73,8 +96,7 @@ font-family: 'Mulish', sans-serif;
   text-transform: capitalize;
   color: #172432;
   display: inline-block;
-  margin: 2rem 0;
-  font-style: normal;
+  margin: 2.5rem 0;
 }
 .sections__title h2::after {
   display: block;
@@ -103,5 +125,15 @@ font-family: 'Mulish', sans-serif;
   }
   .sections__title p {
     font-size: 1.5rem;
+  }
+}
+
+/* -------->> Disable on mobile <<-------- */
+.mobile--disabled {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .mobile--disabled {
+    display: block;
   }
 }
