@@ -96,7 +96,7 @@ font-family: 'Mulish', sans-serif;
   text-transform: capitalize;
   color: #172432;
   display: inline-block;
-  margin: 2rem 0;
+  margin: 2.5rem 0;
 }
 .sections__title h2::after {
   display: block;
@@ -124,5 +124,15 @@ font-family: 'Mulish', sans-serif;
   }
   .sections__title p {
     font-size: 1.5rem;
+  }
+}
+
+/* -------->> Disable on mobile <<-------- */
+.mobile--disabled {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .mobile--disabled {
+    display: block;
   }
 }

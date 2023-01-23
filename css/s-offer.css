@@ -92,9 +92,6 @@
   .s-offer .sections__title h2::after {
     float: right;
   }
-  .s-offer .sections__btn--desktop {
-    margin-left: 0 0 12px 1.55rem;
-  }
 
   .s-offer__container {
     justify-content: space-evenly;
