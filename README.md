@@ -8,15 +8,18 @@ At the end of the layout, the drop-down menu has to be designed.
 ### Requirements.
 
 - BEM Methodology.
-- Validate HTML and CSS files.
-- First-mobily approach.
+- Validate HTML and CSS through provided validator.
+- First-mobile approach.
 - Media-queries.
-  - 1440px.
+  - 375px
+  - 768px
+  - 1024px
+  - 1440px
 - Husky _(git hooks)._
-- Deploy repository on Netlify.
-- Protect your main branch:
-  - You can't push without pull request.
-  - You can't push if checks haven't passed.
-  - You can't approve PR's without approval of collaborators.
+- Netlify deploy.
+- Protect main/master branch:
+  - Can't push without pull request.
+  - Can't push if pipelines checks haven't passed.
+  - Can't merge PR's without (at least) 1 approval.
 
 [Production site (click)](https://202301-w1chwe-joaquin-abel.netlify.app/)
